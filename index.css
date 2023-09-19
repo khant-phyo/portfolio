@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+}
+
+.emoji {
+  font-size: 25px;
+  animation: waving-hand 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+h1 {
+  font-weight: 500;
+  margin-top: 15vh;
+  margin-bottom: 0;
+}
+
+.intro-container {
+  margin-left: 15vw;
+}
+
+.intro-paragraph {
+  width: 420px;
+}
+
+h2 {
+  color: #000000;
+  margin-top: 70px;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.intro-name {
+  color: #29559a;
+  font-weight: 600;
+}
+
+.intro-contact {
+  margin-top: 10vh;
+  font-size: 13px;
+  color: #000000;
+}
+
+.intro-email {
+  color: black;
+  font-weight: 500;
+  border-bottom: 2px solid #29559a;
+}
+
+/* Body */
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background,
+.skills,
+.projects-container {
+  margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 45vw;
+  gap: 40px;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  color: #29559a;
+}
+
+.background p,
+.projects p{
+  width: 35svw;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 500;
+  margin-top: 0.2rem;
+  line-height: 180%;
+}
+
+.new-paragraph {
+  padding-top: 10px;
+}
+
+.paragraphs p span{
+  font-weight: 600;
+  font-size: 14px;
+  color: #29559a;
+}
+
+/*Skills*/
+.skills h3{
+  margin-left: auto;
+}
+
+.logos,
+.projects {
+  margin-top: 0.2rem;
+  width: 32vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+
+.icon-container {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  color: #908f90;
+}
+
+.icon-container p {
+  font-size: 12px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.icon:hover {
+  font-size: 47px;
+  color: #29559a;
+  transition: 0.25s ease-in-out;
+}
+
+/*Projects*/ 
+
+.projects {
+  row-gap: 40px;
+}
+
+.projects .project .title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.used-software {
+  margin-top: 10px;
+  display: flex;
+  width: 45vw;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.project .used-software .software  {
+  border: 1px solid #29559a;
+  display: flex;
+  width: fit-content;
+  font-size: 10px;
+  font-weight: 700;
+  color: #29559a;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+
+.project-link {
+  text-decoration: none;
+  background-color: #908f90;
+  color: white;
+  margin-left: 10px;
+  border-radius: 3px;
+  padding: 2px 7px;
+  font-weight: 500;
+}
+
+
+/* Footer */
+
+.footr {
+  margin-top: 40px;
+  padding: 13px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.credict {
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #29559a;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+
+
+/*scroll bar*/
+::-webkit-scrollbar {
+  width: 1.2em;
+}
+::-webkit-scrollbar-track {
+  background: #dbdbdb;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 100vw;
+  border: 3px solid #dbdbdb;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.911);
+}
+
+@supports(scrollbar-color: black #dbdbdb) {
+  *{
+    scrollbar-color: black #dbdbdb;
+    scrollbar-width: thin;
+}
+}
+/* Hand wave animation*/
+@keyframes waving-hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4.0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*Responsive*/
+
+@media (max-width: 700px) {
+  .background,
+  .skills,  
+  .projects-container {
+    flex-direction: column;
+    width: 70vw;
+  }
+
+  .skills h3{
+    margin: 0;
+  }
+
+  .logos,
+  .projects {
+    width: 100%;
+  }
+
+  .background p,
+  .projects p{
+    width: fit-content;
+  }
+
+  .links{
+    width: 10vw;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
