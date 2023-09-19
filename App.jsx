@@ -191,7 +191,7 @@ export default function App() {
         <div className="links">
           <a href="mailto:thirdoctober310@gmail.com">Email</a>
           <a href="https://github.com/khant-phyo" target='_blank'>Github</a>
-          <a href="www.linkedin.com/in/khantphyoaung7bb257259" target='_blank'>LinkedIn</a>  
+          <a href="www.linkedin.com/in/khantphyoaung7bb257259/" target='_blank'>LinkedIn</a>  
         </div>
       </div>
     </>
